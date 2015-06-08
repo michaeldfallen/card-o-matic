@@ -27,18 +27,13 @@
             </div>
             <div class="footer">
               <table class="checklist">
-                <tr>
-                  <td>Dev Analysis</td>
-                  <td>Unit Test</td>
-                  <td>Development</td>
-                  <td>Dev Peer Review</td>
-                </tr>
-                <tr>
-                  <td>Test Scenario</td>
-                  <td>Test Automation</td>
-                  <td>Test Peer Review</td>
-                  <td>On Int</td>
-                </tr>
+                <% @checklist_items.each_slice(4) do |row| %>
+                  <tr>
+                    <% row.each_with_index do |checklist_item, i| %>
+                      <td><%= checklist_item %> </td>
+                    <% end %>
+                  </tr>
+                <% end %>
               </table>
             </div>
           </div>

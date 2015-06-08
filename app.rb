@@ -106,6 +106,7 @@ class CardOMatic < Sinatra::Base
 
     if @stories.any?
       if params[:with_checklist_layout] == 'true'
+        @checklist_items = params[:checklist_items].split(',')
         erb :checklist_cards, :layout => false
       else
         erb :cards, :layout => false

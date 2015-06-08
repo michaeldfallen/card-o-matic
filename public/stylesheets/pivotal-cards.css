@@ -334,6 +334,10 @@
   left: 0;
 }
 
+.checklist{
+  width: 100%;
+}
+
 .checklist td, .checklist tr {
   border: 1px solid black;
   padding: 5px;
