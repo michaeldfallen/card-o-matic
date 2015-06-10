@@ -78,6 +78,23 @@
     </li>
   </ul>
 
+  <p>Would you like to use the checklist layout?</p>
+
+  <ul>
+    <li>
+      <label>
+        <input type="checkbox" id="with_checklist_layout" name="with_checklist_layout" value="true">
+        Use the checklist layout instead of the standard layout
+        <div class="iteration">
+          <label for="with_checklist_layout">
+            Comma-separated list of items you want to display
+            <input type="text" id="checklist_items" name="checklist_items" value="Dev Analysis, Unit Test, Development, Dev Peer Review, Test Scenario, Test Automation, Test Peer Review, On Int"/>
+          </label>
+        </div>
+      </label>
+    </li>
+  </ul>
+
   <p>
     <button type="submit">Generate these cards <span>(opens in a new window)</span></button>
     <input type="hidden" name="project_id" value="<%= @project.id %>" />
